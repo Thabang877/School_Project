@@ -1,0 +1,182 @@
+<html>
+<head>
+<title>Home page</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css"> 
+
+<body>
+
+<div class="name">
+	GYM MANAGEMENT
+</div>
+<div class="name1">
+	SYSTEM
+</div>
+
+<ul>
+ 
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Menu</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+</ul>
+
+<br>
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="Picking-out-a-Fitness-Center.jpg">
+  <img class="mySlides" src="14_1.jpg">
+  <img class="mySlides" src="images.JFIF">
+</div>
+<br></br>
+<table border="0" cellspacing="2" cellpadding="2" width="100%" height="50">
+	<tr>
+		<td>
+			
+			<class="collapsible"><b><h3>HEALTH</h3></b>
+			
+			<p>
+				FROM<br>
+				<b>*R240 /MONTH</b><br>
+				A Health Clubs have just what you need to achieve your health and fitness goals.Our nationwide network of clubs come packed with state-of-the-art equipment, the latest in group training, heated lap pools, Club-V for the kids, and more.		 
+			</p>
+		</td>
+		<td>
+			<class="collapsible"><b><h3>COLLECTION</h3></b>
+			
+			<p>
+				FROM
+				<br><b>*R1,500 /MONTH</b><br>
+				The world's finest collection of luxury health clubs.Get active on state-of-the-art training equipment and receive a personalised and inspired wellness experience from our Collection Concierge a service designed to help you reach your fitness goals in absolute luxury.
+			</p>
+		</td>
+		<td>
+			
+			<class="collapsible"><b><h3>INCLUDE KIDS</h3></b>
+			<p>
+				FROM
+				<br><b>*R60 /MONTH</b></br>
+				A safe, secure and scientifically-designed activity experience for kids up to 13.
+				Get your kids moving with fun motor skills development programmes, developed in collaboration with Stellenbosch Kinderkinetics, Department of Sport Science at the University of Stellenbosch, inside a secure environment with trained team crew members.
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			
+			<button type="button" class="collapsible"><b><h3>Package A</h3></b></button>
+			<div class="content">
+			<p>
+			Young, old. Fit, unfit. It’s all good. At Virgin Active Health Clubs, we’ve got world-class facilities packed with: 
+
+			Top-of-the-range strength and cardio equipment 
+			Innovative functional training areas 
+			Heated lap and leisure pools 
+			Group training studios 
+			Club-V for the kids 
+			Fully equipped changerooms 
+			Free Internet and Wi-Fi 
+			Lounges 
+			Health food cafés and more.
+			</p>
+			</div>
+		</td>
+		<td>
+			<button type="button" class="collapsible"><b><h3>Package B</h3></b></button>
+			<div class="content">
+			<p>
+			<b>why choose a collection club?</b></br>
+			Collection absolutely everything has been curated to create a highly personalised health and wellness experience.​
+
+			High performance training
+			Suspension Yoga
+			Spas, saunas & steam rooms
+			Shoeshine Bar
+			Finishing Bar
+			Concierge
+			Luxury lounges
+			Kohu Health Food Café
+			Boardroom facilities
+			International reciprocity – train in any Collection Club around the world
+			</p>
+			</div>
+		</td>
+		<td>
+			
+			<button type="button" class="collapsible"><b><h3>Package C</h3></b></button>
+			<div class="content">
+			<p>
+			<b>CLUB-V FOR 6 WEEKS TO 7-YEAR-OLDS</b><br/>
+			For our younger members, we have Club-V. Here, our first aid-trained Club-V crew will get your little ones active with games and activities like Mini Movers, Active Play, and Grid Squad – created in collaboration with Stellenbosch Kinderkinetics, Department of Sport Science, University of Stellenbosch.<br>
+			<b>MAX FOR 6 WEEKS TO 13-YEAR-OLDS</b><br>
+			Big or small, our Club-V Max crew cares for them all. At selected clubs only, Club-V Max offers age-appropriate games and activities like Mini Movers, and Active Play for our littlest members, and Game On, Go52, and Grid Squad for our older ones.
+			</p>
+			</div>
+		</td>
+	</tr>
+</table>
+
+
+</div>
+<div class="footer">
+<br>
+<footer>
+        <small>&copy; Copyright 2019, Project group</small>
+</footer>
+</div>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 30000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
